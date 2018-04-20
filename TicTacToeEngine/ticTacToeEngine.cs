@@ -18,6 +18,7 @@ namespace TicTacToeEngine {
 
         public String Board() {
             String boardstate = @"
+Gamestate = "+Gamestate.ToString()+@"
 +-+-+-+
 |"+BoardState[0]+ @"|" + BoardState[1] + @"|" + BoardState[2] + @"|
 +-+-+-+
@@ -25,6 +26,8 @@ namespace TicTacToeEngine {
 +-+-+-+
 |" + BoardState[6] + @"|" + BoardState[7] + @"|" + BoardState[8] + @"|
 +-+-+-+
+Choose a cell!!!!
+or press q to exit
 ";
             return boardstate;
         }

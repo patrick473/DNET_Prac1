@@ -17,7 +17,16 @@ namespace TicTacToeEngine {
         private int turn = 0;
 
         public String Board() {
-
+            String boardstate = @"
++-+-+-+
+|"+BoardState[0]+ @"|" + BoardState[1] + @"|" + BoardState[2] + @"|
++-+-+-+
+|" + BoardState[3] + @"|" + BoardState[4] + @"|" + BoardState[5] + @"|
++-+-+-+
+|" + BoardState[6] + @"|" + BoardState[7] + @"|" + BoardState[8] + @"|
++-+-+-+
+";
+            return boardstate;
         }
         public void changePlayer() {
 

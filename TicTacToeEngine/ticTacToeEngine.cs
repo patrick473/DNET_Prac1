@@ -27,7 +27,8 @@ Gamestate = "+Gamestate.ToString()+@"
 |" + BoardState[6] + @"|" + BoardState[7] + @"|" + BoardState[8] + @"|
 +-+-+-+
 Choose a cell!!!!
-or press q to exit
+Type reset to reset
+or type exit to exit
 ";
             return boardstate;
         }

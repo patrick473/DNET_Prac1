@@ -13,8 +13,35 @@ namespace ConsoleApp1 {
             Console.WriteLine(t.Board());
 
             // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+
+            String input = Console.ReadLine();
+
+            while (input != "exit") {
+                if (input != "reset") {
+
+
+                    int value;
+                    if (int.TryParse(input, out value)) {
+                        if (t.ChooseCell(value)) {
+                            t.AssignCell(value);
+
+
+                            t.CheckWinner();
+                            Console.WriteLine(t.Board());
+                        }
+
+
+                        Console.WriteLine(input);
+                        input = Console.ReadLine();
+                    }
+
+
+                }
+                else {
+                    t.reset();
+                    Console.WriteLine(t.Board());
+                }
+            }
         }
     }
 }

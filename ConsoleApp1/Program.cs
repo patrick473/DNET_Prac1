@@ -31,7 +31,7 @@ namespace ConsoleApp1 {
                         }
 
 
-                        Console.WriteLine(input);
+                        
                         input = Console.ReadLine();
                     }
 
@@ -40,6 +40,7 @@ namespace ConsoleApp1 {
                 else {
                     t.reset();
                     Console.WriteLine(t.Board());
+                    input = Console.ReadLine();
                 }
             }
         }

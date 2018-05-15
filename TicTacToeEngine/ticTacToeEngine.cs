@@ -106,6 +106,7 @@ or type exit to exit
             }
         }
         public void reset() {
+            turn = 0;
             BoardState = new ArrayList() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             Gamestate = GameState.PlayerOPlays;
         }
